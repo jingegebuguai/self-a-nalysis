@@ -1,0 +1,5 @@
+export const ChartRouteData = 'ChartRouteData'
+export const StepDistributeData = 'StepDistributeData'
+export const SuggestionData = 'SuggestionData'
+export const ChartLinkData = 'ChartLinkData'
+export const ShowDetailDialog = 'ShowDetailDialog'

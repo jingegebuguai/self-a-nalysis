@@ -1,0 +1,128 @@
+.el-input-group__append, .el-input-group__prepend {
+  background-color: #fff;
+}
+
+.dialog-show-num {
+  color: #36ab00;
+  font-weight: bolder;
+  padding-right: 20px;
+}
+
+.el-dialog {
+  .el-dialog__header {
+    padding: 20px;
+    padding-bottom: 0;
+  }
+  .el-dialog__body {
+    padding: 10px 20px;
+  }
+}
+
+.include-business {
+  .el-select .el-input .el-input__inner {
+    border-color: #36ab00;
+  }
+  .el-input__inner {
+    font-weight: bold;
+  }
+}
+
+.el-card {
+  border-radius: 0;
+  box-shadow: none;
+  .el-card__header {
+    padding: 20px;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+  .el-card__body {
+    padding: 15px 20px 20px 20px;
+  }
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers*/
+  color: #c9cdd5 !important;
+}
+
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18*/
+  color: #c9cdd5 !important;
+}
+
+input::-moz-placeholder { /* Mozilla Firefox 19+*/
+  color: #c9cdd5 !important;
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10+*/
+  color: #c9cdd5 !important;
+}
+
+.h3 {
+  margin-top: 0;
+}
+
+.el-tree-node {
+  .el-tree-node__children {
+    width: 350px;
+    .is-current {
+      color: #86bb6e;
+      border-left: 1px solid #36ab00;
+      background: #F2F6FC;
+      font-weight: 900;
+    }
+    .el-tree-node__content {
+      height: 40px;
+    }
+  }
+}
+
+.el-radio {
+  .el-radio__label {
+    padding-left: 4px;
+  }
+  & + .el-radio {
+    margin-left: 5px;
+  }
+}
+
+.el-loading-mask {
+  position: absolute;
+  z-index: 0;
+  background-color: rgba(255, 255, 255, .9);
+  margin: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: opacity .3s
+}
+
+/*自定义滚动条*/
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  border-radius: 4px;
+  overflow: auto;
+}
+
+.el-scrollbar__wrap {
+  overflow: auto;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e6e6e6;
+  min-height: 25px;
+  min-width: 25px;
+  border: 1px solid #e0e0e0;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f7f7f7;
+  border: 1px solid #efefef;
+}
+
+.el-table th div {
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+  line-height: 1;
+}

@@ -1,0 +1,193 @@
+.el-container {
+  .el-aside {
+    .left-header {
+      :global(.el-card__body) {
+        padding: 15px 0;
+      }
+      .left-header-title {
+        display: flex;
+        align-items: baseline;
+        padding: 0 18px;
+        .title {
+          width: 85px;
+        }
+        .subtitle {
+          width: 108px;
+          font-size: 12px;
+          color: grey;
+          margin-left: 10px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+        }
+      }
+      .field_search {
+        padding: 5px 18px;
+      }
+    }
+    .left-body {
+      :global(.el-card__body) {
+        padding: 5px 0;
+      }
+      .el-scrollbar {
+        height: 440px;
+        .cube-type {
+          padding-top: 5px;
+          padding-left: 15px;
+          font-size: 16px;
+        }
+        ul.field-list {
+          list-style: none;
+          margin: 5px 0 0 0;
+          padding: 0;
+          & > li.field-item {
+            height: 30px;
+            line-height: 30px;
+            margin: 6px 0;
+            padding: 0 0 0 30px;
+            font-size: 12px;
+            cursor: move;
+            .field-text {
+              width: 140px;
+              display: inline-block;
+              &.is-modified {
+                /*border-bottom: 1px dashed #5ebc33;*/
+              }
+              /* 不折行 */
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              .iconfont {
+                color: #5ebc33;
+                font-size: 12px;
+              }
+            }
+            &:hover {
+              background: #F2F6FC;
+              font-weight: 900;
+              color: #86bb6e;
+            }
+          }
+        }
+      }
+    }
+  }
+  .el-main {
+    padding: 0 0 0 4px;
+    .chart-config {
+      display: flex;
+      .chart-config-basic {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        .config-title {
+          display: flex;
+          align-items: baseline;
+          .title {
+            font-size: 16px;
+            color: #699f00;
+            .iconfont {
+              font-size: 20px;
+              margin-left: 5px;
+            }
+            .title-input {
+              .title-input-read {
+                color: #699f00;
+                border-style: none;
+                background-color: transparent;
+              }
+              .title-input-write {
+                color: #699f00;
+                border-style: none;
+                border-bottom: 1px green solid;
+                background-color: transparent;
+                display: inline-block;
+              }
+              .el-button {
+                margin: 0;
+                padding: 0;
+                .iconfont {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+
+        .config-content {
+          display: flex;
+          align-items: baseline;
+          .chart-type {
+            text-decoration: none;
+            color: #5a5e66;
+            cursor: pointer;
+            &.is-active {
+              color: #5ebc33;
+              font-weight: 900;
+            }
+            &.is-disabled {
+              cursor: not-allowed;
+              color: #ccc;
+            }
+            .iconfont {
+              font-size: 18px;
+              margin-left: 8px;
+            }
+          }
+        }
+      }
+      .chart-config-form {
+        flex-grow: 1;
+        .drop-area {
+          display: flex;
+          align-items: center;
+          &.can-drop {
+            .area-content {
+              border: 1px #80c13f dashed;
+              background: #F2F6FC;
+            }
+          }
+          & > .area-title {
+            width: 100px;
+            flex-shrink: 0;
+            padding-right: 20px;
+            text-align: right;
+            .iconfont {
+              color: #5ebc33;
+            }
+          }
+          & > .area-content {
+            margin-top: 4px;
+            padding: 2px;
+            flex-grow: 1;
+            border-bottom: 1px solid rgba(0, 0, 0, .1)
+          }
+        }
+
+        ul.dimension-list, ul.splitdim-list, ul.measure-list, ul.filter-list {
+          list-style: none;
+          min-height: 28px;
+          margin: 0;
+          padding: 0;
+          & > li {
+            display: inline-block;
+            position: relative;
+            margin: 0 5px 2px 0;
+            padding: 0;
+          }
+          & > .drag-tip-text {
+            display: inline-block;
+            line-height: 35px;
+            color: #ccc
+          }
+        }
+      }
+      .chart-show {
+        margin-top: 1px;
+      }
+    }
+  }
+}
